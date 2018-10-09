@@ -1,0 +1,9 @@
+﻿
+<!--search--> 
+<span ng-show="page=='git'">
+    <h1>Search Git Hub repository</h1>
+    <p class="lead">Insert key word</p>
+    <input type="search" ng-model="searchKey" placeholder="insert  keyword to search" ng-keypress="($event.charCode==13)? search() : return" autofocus/>
+    <button type="button"style="height:4.8rem; width:4rem;background-color:lightblue;margin-bottom:1px"><i class="fa fa-search" ng-click="search(searchKey)"></i></button>
+
+</span>

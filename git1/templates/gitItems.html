@@ -1,0 +1,19 @@
+﻿<!--header-->
+
+<div class="header" style="">
+    <div ">
+    <hr />
+    </div>
+</div>
+
+<!--data-->
+
+<div class="flex-container" style="max-height:100rem;overflow-y:auto;">
+    <div ng-repeat=" item in data track by $index" ">
+        <h3 style=" word-wrap: break-word;">{{ item.name }}</h3>
+        <p ng-click="saveItem(item)"><i class="fa fa-bookmark-o" aria-hidden="true"></i></p>
+        <img ng-src="{{item.owner.avatar_url}}" alt="Cinque Terre" width="190" style="margin-bottom:10px;">
+    </div>
+</div>
+
+<!--TODO - set a spinner-->

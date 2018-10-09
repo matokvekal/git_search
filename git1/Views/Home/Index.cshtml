@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<body>
+    <div class="jumbotron">
+        <search></search>
+        <span ng-show="page=='list'">
+            <h1>List of Bookmarks</h1>
+        </span>
+    </div>
+    @*show the git cards*@
+    <div class="row">
+        <div class="row" ng-include="'../templates/gitItems.html'">
+        </div>
+
+    </div>
+
+</body>
+
+
+
